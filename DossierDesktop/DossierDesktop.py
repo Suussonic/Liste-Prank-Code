@@ -4,10 +4,10 @@ import random
 
 # Trouver le bon chemin du bureau
 desktop_paths = [
-    os.path.join(os.path.expanduser("~"), "Desktop"),  # Bureau classique
-    os.path.join(os.path.expanduser("~"), "Bureau"),   # Bureau en français
-    os.path.join(os.path.expanduser("~"), "OneDrive", "Bureau"), # Bureau OneDrive
-    os.path.join(os.path.expanduser("~"), "OneDrive", "Desktop")  # Bureau classique OneDrive
+    os.path.join(os.path.expanduser("~"), "Desktop"),  
+    os.path.join(os.path.expanduser("~"), "Bureau"),  
+    os.path.join(os.path.expanduser("~"), "OneDrive", "Bureau"),
+    os.path.join(os.path.expanduser("~"), "OneDrive", "Desktop")
 ]
 
 # Sélectionne le bon chemin du bureau
@@ -18,18 +18,23 @@ if not desktop:
     exit()
 
 # Création des 100 dossiers (Dossier_1 à Dossier_100)
-dossiers = []
-for i in range(1, 101):
-    dossier_path = os.path.join(desktop, f"Dossier_{i}")
-    os.makedirs(dossier_path, exist_ok=True)
-    dossiers.append(dossier_path)  # Stocke les chemins des dossiers
+dossiers = [os.path.join(desktop, f"Dossier_{i}") for i in range(1, 101)]
+for dossier in dossiers:
+    os.makedirs(dossier, exist_ok=True)
 
-# Lister les éléments (fichiers et dossiers) à déplacer
-elements = [f for f in os.listdir(desktop) if not f.startswith("Dossier_")]
+# Lister uniquement les fichiers à déplacer
+elements = [f for f in os.listdir(desktop) if os.path.isfile(os.path.join(desktop, f))]
 
-# Déplacer chaque élément dans un dossier aléatoire parmi les 100
+# Vérification : afficher les fichiers trouvés
+print(f"Fichiers trouvés : {elements}")
+
+# Déplacer chaque fichier dans un dossier aléatoire parmi les 100
 for elem in elements:
-    dossier_choisi = random.choice(dossiers)  # Sélectionne un dossier au hasard
-    shutil.move(os.path.join(desktop, elem), dossier_choisi)
+    source = os.path.join(desktop, elem)
+    dossier_choisi = random.choice(dossiers)
+    destination = os.path.join(dossier_choisi, elem)
+    
+    shutil.move(source, destination)
+    print(f"Déplacé : {elem} → {dossier_choisi}")
 
 print("Tous les fichiers ont été répartis aléatoirement dans les dossiers ! ✅")
