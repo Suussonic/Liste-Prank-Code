@@ -6,6 +6,7 @@ Répertoire contenant des petits projets a but comique et non pour nuire.
 - [Popup Infini](#♾️popup-infini)
 - [Dossier Desktop](#📁dossier-desktop)
 - [Multiple Calculatrice](#🧮multiple-calculatrice)
+- [BlueScreen](#🟦blueScreen)
 
 # ♾️ Popup Infini
 
@@ -46,3 +47,9 @@ Ensuite il faudra compiler le script grâce à cet commande, attention à être 
 ```
 
 L'éxécutable se trouvera dans le dossier dist !
+
+# 🟦 BlueScreen
+
+Lorsqu'on exécute ce fichier en tant qu'administrateur, il va littéralement faire crasher le PC, et un Blue Screen apparaîtra. Il suffira alors de redémarrer l'ordinateur et il n'y aura plus de problème.
+
+Aucune perte de donnée ne sera à déplorer, sauf si un fichier était en cours de modification et qu'il n'a pas été sauvegardé (par exemple, un fichier Word qui n'a pas été enregistré).
