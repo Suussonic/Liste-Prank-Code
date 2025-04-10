@@ -53,3 +53,21 @@ L'éxécutable se trouvera dans le dossier dist !
 Lorsqu'on exécute ce fichier en tant qu'administrateur, il va littéralement faire crasher le PC, et un Blue Screen apparaîtra. Il suffira alors de redémarrer l'ordinateur et il n'y aura plus de problème.
 
 Aucune perte de donnée ne sera à déplorer, sauf si un fichier était en cours de modification et qu'il n'a pas été sauvegardé (par exemple, un fichier Word qui n'a pas été enregistré).
+
+# 🔥 ClavierInfernal
+
+C'est un exécutable échangeant les touches de manière complètement aléatoire.
+
+Pour arrêter le supplice, il faudra aller dans le gestionnaire de tâches et faire Fin de tâche sur "ClavierInfernal.exe"
+
+pour ceux voulant modifier le code, il faudra installer la bibliothèque Keyboard :
+
+    ```
+    pip install keyboard
+```
+
+Ensuite, pour compiler, il faudra entrer cette commande : 
+
+    ```
+    pyinstaller --onefile --noconsole ClavierInfernal.py
+```
