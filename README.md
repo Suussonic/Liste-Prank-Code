@@ -9,6 +9,7 @@ Répertoire contenant des petits projets à but comique et non pour nuire.
 - [BlueScreen](#🟦bluescreen)
 - [ClavierInfernal](#🔥clavierinfernal)
 - [SourisFolle](#🖱️sourisfolle)
+- [LockDown](#🔒lockdown)
 
 # ♾️ Popup Infini
 
@@ -79,6 +80,16 @@ Ensuite, pour compiler, il faudra entrer cette commande :
 Cet exécutable donne des mouvements à la souris et la rend incontrôlable.
 
 Pour l'arrêter, il faudra aller dans le gestionnaire de tâches et faire Fin de tâche sur "SourisFolle.exe" (si vous y arrivez, personnellement j'ai préféré redémarrer).
+
+Pour ceux voulant modifier le code, pour le compiler il vous faudra utiliser l'outil AutoHotKey :
+
+https://www.autohotkey.com/
+
+# 🔒 LockDown
+
+Cet exécutable bloque les raccourcis et d'autre touches spécifiques.
+
+Pour l'arrêter, il faudra aller dans le gestionnaire de tâches et faire Fin de tâche sur "LockDown.exe".
 
 Pour ceux voulant modifier le code, pour le compiler il vous faudra utiliser l'outil AutoHotKey :
 
