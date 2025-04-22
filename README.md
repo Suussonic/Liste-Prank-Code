@@ -10,6 +10,7 @@ Répertoire contenant des petits projets à but comique et non pour nuire.
 - [ClavierInfernal](#🔥clavierinfernal)
 - [SourisFolle](#🖱️sourisfolle)
 - [LockDown](#🔒lockdown)
+- [Error](#🚫error)
 
 # ♾️ Popup Infini
 
@@ -72,7 +73,7 @@ Pour ceux voulant modifier le code, il faudra installer la bibliothèque Keyboar
 Ensuite, pour compiler, il faudra entrer cette commande : 
 
     ```
-    pyinstaller --onefile --noconsole ClavierInfernal.py
+    pyinstaller --onefile --noconsole "Nom Du Fichier".py
     ```
 
 # 🖱️ SourisFolle
@@ -94,3 +95,20 @@ Pour l'arrêter, il faudra aller dans le gestionnaire de tâches et faire Fin de
 Pour ceux voulant modifier le code, pour le compiler il vous faudra utiliser l'outil AutoHotKey :
 
 https://www.autohotkey.com/
+
+# 🚫 Error
+
+C'est un exécutable renomme tous les fichiers du bureau en "Erreur" et les raccourcis se retrouve avec une icone changé.
+
+
+Pour ceux voulant modifier le code, il faudra installer la bibliothèque Keyboard :
+
+    ```
+    pip install pywin32
+    ```
+
+Ensuite, pour compiler, il faudra entrer cette commande : 
+
+    ```
+    pyinstaller --onefile --noconsole "Nom Du Fichier".py
+    ```
