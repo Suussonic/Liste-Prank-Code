@@ -123,3 +123,20 @@ Pour l'arrêter, il faudra aller dans le gestionnaire de tâches et faire Fin de
 Pour ceux voulant modifier le code, pour le compiler il vous faudra utiliser l'outil AutoHotKey :
 
 https://www.autohotkey.com/
+
+# 🤣 TrollFace
+
+C'est un exécutable change bêtement le fond d'écran.
+
+
+Pour ceux voulant modifier le code, il faudra installer trois bibliothèque :
+
+    ```
+    pip install ctypes os sys
+    ```
+
+Ensuite, pour compiler, il faudra entrer cette commande : 
+
+    ```
+    pyinstaller --onefile --noconsole --add-data "troll_face.png;." "Nom Du Fichier".py
+    ```
