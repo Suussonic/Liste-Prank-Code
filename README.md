@@ -11,6 +11,7 @@ Répertoire contenant des petits projets à but comique et non pour nuire.
 - [SourisFolle](#🖱️sourisfolle)
 - [LockDown](#🔒lockdown)
 - [Error](#🚫error)
+- [InversedMouse](#⏪inversedmouse)
 
 # ♾️ Popup Infini
 
@@ -112,3 +113,13 @@ Ensuite, pour compiler, il faudra entrer cette commande :
     ```
     pyinstaller --onefile --noconsole "Nom Du Fichier".py
     ```
+
+# ⏪ InversedMouse
+
+Cet exécutable inverse les axes de la souris.
+
+Pour l'arrêter, il faudra aller dans le gestionnaire de tâches et faire Fin de tâche sur "InversedMouse.exe".
+
+Pour ceux voulant modifier le code, pour le compiler il vous faudra utiliser l'outil AutoHotKey :
+
+https://www.autohotkey.com/
