@@ -12,6 +12,7 @@ Répertoire contenant des petits projets à but comique et non pour nuire.
 - [LockDown](#🔒lockdown)
 - [Error](#🚫error)
 - [InversedMouse](#⏪inversedmouse)
+- [TrollFace](#🤣trollface)
 
 # ♾️ Popup Infini
 
