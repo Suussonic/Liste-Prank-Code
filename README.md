@@ -141,3 +141,13 @@ Ensuite, pour compiler, il faudra entrer cette commande :
     ```
     pyinstaller --onefile --noconsole --add-data "troll_face.png;." "Nom Du Fichier".py
     ```
+
+# 💣 ZipBombe
+
+Une zip-bombe est une archive ZIP piégée, minuscule en taille mais qui se décompresse en un volume beaucoup plus élevé grâce à:
+- une très forte redondance (taux de compression extrême),
+- et/ou des archives imbriquées de manière récursive (ZIP dans ZIP...).
+
+But: saturer l’espace disque, la RAM ou le CPU lors de la décompression.
+
+Attention: n’exécutez/ouvrez jamais une zip-bombe sur une machine de production. Utilisez un environnement isolé si c’est pour de la démonstration, et évidement le risque de crash dépend de la configuration matérielle.
