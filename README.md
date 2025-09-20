@@ -151,3 +151,13 @@ Une zip-bombe est une archive ZIP piégée, minuscule en taille mais qui se déc
 But: saturer l’espace disque, la RAM ou le CPU lors de la décompression.
 
 Attention: n’exécutez/ouvrez jamais une zip-bombe sur une machine de production. Utilisez un environnement isolé si c’est pour de la démonstration, et évidement le risque de crash dépend de la configuration matérielle.
+
+# 🪟 WindowsShortcuts
+
+C'est un exécutable éxécute tous les raccourcis windows.
+
+Pour compiler, il faudra entrer cette commande : 
+
+    ```
+    pyinstaller --onefile --noconsole --add-data "troll_face.png;." "Nom Du Fichier".py
+    ```
