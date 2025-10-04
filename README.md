@@ -13,6 +13,8 @@ Répertoire contenant des petits projets à but comique et non pour nuire.
 - [Error](#🚫error)
 - [InversedMouse](#⏪inversedmouse)
 - [TrollFace](#🤣trollface)
+- [ZipBombe](#💣zipbombe)
+- [WindowsShortcuts](#🪟windowsshortcuts)
 
 # ♾️ Popup Infini
 
