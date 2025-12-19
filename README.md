@@ -1,6 +1,6 @@
 # 🗒️ Liste Prank Code
 
-Répertoire contenant des petits projets à but comique et non pour nuire.
+Répertoire contenant des petits projets.
 
 ## 📜 Sommaire
 - [Popup Infini](#♾️popup-infini)
